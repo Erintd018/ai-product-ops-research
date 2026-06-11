@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "exa": {
+      "command": "npx",
+      "args": ["-y", "exa-mcp-server"],
+      "env": {
+        "EXA_API_KEY": "${EXA_API_KEY}",
+        "no_proxy": "localhost,127.0.0.1,api.exa.ai,mcp.exa.ai"
+      }
+    },
+    "firecrawl": {
+      "command": "npx",
+      "args": ["-y", "firecrawl-mcp"],
+      "env": {
+        "FIRECRAWL_API_KEY": "${FIRECRAWL_API_KEY}",
+        "no_proxy": "localhost,127.0.0.1,api.firecrawl.dev"
+      }
+    },
+    "tavily": {
+      "command": "npx",
+      "args": ["-y", "tavily-mcp@latest"],
+      "env": {
+        "TAVILY_API_KEY": "${TAVILY_API_KEY}"
+      }
+    }
+  }
+}
